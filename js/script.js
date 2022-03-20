@@ -47,6 +47,13 @@ $(document).ready(function(){
         $("").html(totalPrice);
 
     });
+    $("button#yes").click(function(){
+        alert("The delivery charge is : 100")
+        prompt("Please enter your location:")
+        let location= $("prompt").val();
+        alert(`Your Order will be delivered to your ${location}`)
+
+    })
 
 
 
