@@ -12,7 +12,7 @@
   </head>
   <body>
       <div class="jumbotron">
-         <h1> THE PIZZA SPACE</h1>
+         <h2> THE PIZZA SPACE</h2>
       </div>
       <div class="container" id="content">
           <div class="container">
@@ -20,7 +20,8 @@
                   <div class="col" id="size">
                     <div class="form-group">
                         <img src="https://thumbs.dreamstime.com/b/pizza-supreme-lots-pepperoni-vegetables-very-nice-golden-crust-there-artistic-blur-31294766.jpg"  alt="pizza">
-                        <label for="pizza-size">Pizza Size</label>
+                        <!-- <label for="pizza-size">Pizza Size</label> -->
+                        <h5>Pizza Size</h5>
                         <select class="form-control" id="pizza-size">
                           <option>small</option>
                           <option>medium</option>
@@ -32,7 +33,8 @@
                   <div class="col" id="crust">
                     <div class="form-group">
                         <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" alt="crust">
-                        <label for="pizza-crust">Crust</label>
+                        <!-- <label for="pizza-crust">Crust</label> -->
+                        <h5>Crust</h5>
                         <select class="form-control" id="pizza-crust">
                           <option>cripsy</option>
                           <option>stuffed</option>
@@ -44,7 +46,8 @@
                   <div class="col" id="tooping">
                     <div class="form-group">
                         <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="crust">
-                        <label for="pizza-tooping">Tooping</label>
+                        <!-- <label for="pizza-tooping">Tooping</label> -->
+                        <h5>Tooping</h5>
                         <select class="form-control" id="pizza-tooping">
                           <option>pepperoni</option>
                           <option>Mushroom</option>
@@ -61,7 +64,7 @@
           </div>
           <button type="submit" id="order">Order</button>
           <table class="table">
-            <thead class="thead-dark">
+            <thead >
               <tr>
                 <th scope="col">Order No.</th>
                 <th scope="col">Size of PIzza</th>
@@ -70,19 +73,27 @@
                 <th scope="col">Total</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="tb">
               <tr>
                 <th scope="row">1</th>
-                <td id="size"></td>
-                <td id="tooping"></td>
-                <td id="crust"></td>
-                <td id="Total"></td>
+                <td id="tb-size"></td>
+                <td id="tb-tooping"></td>
+                <td id="tb-crust"></td>
+                <td id="tb-total"></td>
               </tr>
             </tbody>
           </table>
-          <button type="submit" id="add-order" >Add Order</button>
-          <button type="submit" id="checkout">Checkout</button>
-
+          <div class="more-infomation-section">
+            <button type="submit" id="add-order" >Add Order</button>
+            <div class="more-information">
+              <h4>The total amount is: <span></span></h4>
+              <h6>Would you like your pizza to be delivered ?</h6>
+            </div>
+            <button id="yes" type="submit">Yes</button>
+            <button id="no"   type="submit">No</button>
+          </div>  
+          <button type="submit" id="checkOut">Checkout</button>
+          
       </div>
         <!-- Footer -->
     <footer class="page-footer font-small blue fixed-bottom">

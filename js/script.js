@@ -2,54 +2,54 @@
 let totalPizzaPrice;
 
 //    Order constructor
-function Pizza(size,crust,tooping,total,orderNo){
-    this.size =size;
-    this.crust=crust;
-    this.tooping=tooping;
-    this.total= total;
-    this.orderNo=orderNo
-}
+// function Pizza(size,crust,tooping,total,orderNo){
+//     this.size =size;
+//     this.crust=crust;
+//     this.tooping=tooping;
+//     this.total= total;
+//     this.orderNo=orderNo
+// }
 
-Pizza.prototype.totalPrice = function(){
-    let sizePrice;
-    let toopingPrice;
-    let crustPrice;
-    if(this.size=== "small"){
-        sizePrice=600;
-    }
-    else if(this.size === "medium"){
-        sizePrice =800
-    }
-    else{
-        sizePrice=1200
-    }
+// Pizza.prototype.totalPrice = function(){
+//     let sizePrice;
+//     let toopingPrice;
+//     let crustPrice;
+//     if(this.size=== "small"){
+//         sizePrice=600;
+//     }
+//     else if(this.size === "medium"){
+//         sizePrice =800
+//     }
+//     else{
+//         sizePrice=1200
+//     }
 
-    if(this.crust=== "crispy"){
-        crustPrice=100;
-    }
-    else if(this.size === "stuffed"){
-        crustPrice=150;
-    }
-    else{
-        crustPrice=200;
-    }
+//     if(this.crust=== "crispy"){
+//         crustPrice=100;
+//     }
+//     else if(this.size === "stuffed"){
+//         crustPrice=150;
+//     }
+//     else{
+//         crustPrice=200;
+//     }
 
-    if(this.tooping === "pepperoni"){
-        toopingPrice=100;
+//     if(this.tooping === "pepperoni"){
+//         toopingPrice=100;
 
-    }
-    else if (this.tooping ==="Mushroom"){
-        toopingPrice=150;
-    }
-    else if (this.tooping ==="Meat Deluxe"){
-        toopingPrice=180;
-    }
-    else{
-        toopingPrice=120;
-    }
-    totalPizzaPrice = sizePrice + crustPrice +toopingPrice;
-    console.log(totalPizzaPrice)
-}
+//     }
+//     else if (this.tooping ==="Mushroom"){
+//         toopingPrice=150;
+//     }
+//     else if (this.tooping ==="Meat Deluxe"){
+//         toopingPrice=180;
+//     }
+//     else{
+//         toopingPrice=120;
+//     }
+//     totalPizzaPrice = sizePrice + crustPrice +toopingPrice;
+//     console.log(totalPizzaPrice)
+// }
 
 $(document).ready(function(){
     $("#order").click(function(){
@@ -67,7 +67,55 @@ $(document).ready(function(){
         $("#tb-crust").html(pizzaCrust);
         $("#tb-total").html(total);  
 
-    
+        function Pizza(size,crust,tooping,total,orderNo){
+            this.size =size;
+            this.crust=crust;
+            this.tooping=tooping;
+            this.total= total;
+            this.orderNo=orderNo
+        }
+        
+        Pizza.prototype.totalPrice = function(){
+            let sizePrice;
+            let toopingPrice;
+            let crustPrice;
+            if(this.size=== "small"){
+                sizePrice=600;
+            }
+            else if(this.size === "medium"){
+                sizePrice =800
+            }
+            else{
+                sizePrice=1200
+            }
+        
+            if(this.crust=== "crispy"){
+                crustPrice=100;
+            }
+            else if(this.size === "stuffed"){
+                crustPrice=150;
+            }
+            else{
+                crustPrice=200;
+            }
+        
+            if(this.tooping === "pepperoni"){
+                toopingPrice=100;
+        
+            }
+            else if (this.tooping ==="Mushroom"){
+                toopingPrice=150;
+            }
+            else if (this.tooping ==="Meat Deluxe"){
+                toopingPrice=180;
+            }
+            else{
+                toopingPrice=120;
+            }
+            totalPizzaPrice = sizePrice + crustPrice +toopingPrice;
+            console.log(totalPizzaPrice)
+        }
+        
 
 
         $("#add-order").click(function(){
@@ -78,7 +126,7 @@ $(document).ready(function(){
             let pizzaCrust =$("#pizza-crust").find(":selected").text();
             let pizzaTooping =$("#pizza-tooping").find(":selected").text();
             let total = totalPizzaPrice
-            let order =1;
+            let order =2;
             priceTotal= priceTotal+ totalPizzaPrice;
 
             let newPizza =new Pizza(pizzaSize,pizzaCrust,pizzaTooping,total,order);
@@ -122,6 +170,6 @@ $(document).ready(function(){
 
         // });
 
-
+        
     });
 });

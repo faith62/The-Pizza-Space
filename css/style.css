@@ -1,7 +1,13 @@
 
 .jumbotron{
+    background-color: #8B9A46;
+    background-color: rgb(16, 54, 16);
     font-weight: bolder;
     text-align: center;
+    color: white;
+    font-style: italic;
+    font-family:  sans-serif;
+
 }
 body{
     /* background-image: url(https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60); */
@@ -15,7 +21,9 @@ body{
 }
 #content{
     background-color: rgba(255, 255, 255, 0.623);
-    height: 70vh;
+    height: 100vh;
+    text-align: center;
+    font-weight: bold;
 }
 #content img{
     width: 200px;
@@ -25,4 +33,19 @@ body{
 img{
     vertical-align: middle;
     align-content: center;
+}
+#space{
+    height: 7vh;
+   
+}
+button{
+    background-color: rgb(16, 54, 16);
+    
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+thead{
+    background-color: rgb(16, 54, 16);
+    color: white;
 }
