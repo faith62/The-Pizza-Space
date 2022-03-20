@@ -42,11 +42,11 @@ $(document).ready(function(){
         $("table").append(newRow)
     });
 
-    // $("#checkout").click(function(){
-    //     totalPrice = totalPrice + total;
-    //     $("").html(totalPrice);
+    $("#checkout").click(function(){
+        totalPrice = totalPrice + total;
+        $("").html(totalPrice);
 
-    // });
+    });
 
 
 
