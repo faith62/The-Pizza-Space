@@ -9,7 +9,7 @@ $(document).ready(function(){
         let crust =$("#pizza-crust").find(":selected").text();
         let tooping =$("#pizza-tooping").find(":selected").text();
         let order =1;
-        let totalPrice = 0;
+        let priceTotal = 0;
 
     // $("").html($(".size option:selected").text()+ "-"+sizeOfPizza); 
     // $("").html($(".tooping option:selected").text()+ "-"+sizeOfPizza);
@@ -73,12 +73,12 @@ $(document).ready(function(){
         let crust =$("#pizza-crust").find(":selected").text();
         let tooping =$("#pizza-tooping").find(":selected").text();
         let order =1;
-        totalPrice = totalPrice + total;
+        priceTotal= priceTotal+ totalPizzaPrice;
 
-        let newPizza =new Pizza(size, crust, tooping,order);
-        newPizza.totalPrice
+        let newPizza =new Pizza(size, crust, tooping,total,order);
+    
 
-        let newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' +size + " - " + newPizza.size + '</td><td id="crust">' +crust + " - " + newPizza.crust + '</td><td id="tooping">' + tooping+ " - " + newPizza.tooping+ '</td><td id="total">' + newPizza.total + '</td></tr>'
+        let newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' +$("#pizza-size").find(":selected").text();+ " - " + newPizza.size + '</td><td id="crust">' +$("#pizza-crust").find(":selected").text(); + " - " + newPizza.crust + '</td><td id="tooping">' + $("#pizza-tooping").find(":selected").text();+ " - " + newPizza.tooping+ '</td><td id="total">' + newPizza.total + '</td></tr>'
         $("table").append(newRow)
     });
 
@@ -93,7 +93,7 @@ $(document).ready(function(){
         
         let location =prompt("Please enter your location:")
         alert(`Your Order will be delivered to your location: ${location}`)
-        $(".more-information h4").html(totalPrice + 100);
+        $(".more-information h4").html(totalPizzaPrice + 100);
 
 
     });
@@ -101,8 +101,10 @@ $(document).ready(function(){
         alert("please proceed and click checkout ")
     })
     $("button#checkout").click(function(){
-        $(".more-infomation-section").hide()
-        $(".more-information h4").html(totalPrice);
+        $(".more-information h6").hide()
+        $(".more-information #yes").hide()
+        $(".more-information #no").hide()
+        $(".more-information h4").html(totalPizzaPrice);
 
     });
 
