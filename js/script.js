@@ -130,6 +130,21 @@ $(document).ready(function(){
             alert("Please proceed and click checkout ")
         });
        
+       
         
     });
+  
 });
+//   $("#reset").click(function(){
+//         $("#deliv-quiz").show()
+//         $("button#yes").show()
+//         $("button#no").show()
+//         $("button#checkOut").show()
+//         $("button#add-order").show()
+//         $("button#order").show()
+//         $("#tb").empty();
+//         result.innerHTML=" "
+        
+      
+
+//     });

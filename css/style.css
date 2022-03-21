@@ -17,7 +17,7 @@ body{
     /* background-image: url(https://thumbs.dreamstime.com/b/pizza-supreme-lots-pepperoni-vegetables-very-nice-golden-crust-there-artistic-blur-31294766.jpg); */
     background-repeat: no-repeat;
     background-size:cover;
-    height: 100vh;
+    height: 120vh;
 }
 #content{
     background-color: rgba(255, 255, 255, 0.623);
@@ -51,4 +51,7 @@ thead{
 }
 #result{
     font-weight: bolder;
+}
+#reset{
+    margin-top: 10%;
 }
