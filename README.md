@@ -3,7 +3,7 @@
 Web application where customers can order different sizes of pizzas with one or more toppings. Customers can choose for it to be delivery or not .
 ![pizaa landing page](https://user-images.githubusercontent.com/60944871/159259455-fc23670b-c704-4429-a617-cc46cb7ee9a7.png)
 
-### By Faith Chemutai ,06/03/2022
+### By Faith Chemutai ,21/03/2022
 ## Setup/instalation Requirements
 *You need to have a vs code/ atom installed
 *Access to Internet
