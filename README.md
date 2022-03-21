@@ -1,7 +1,7 @@
 # The-Pizza-space
 ### Project description
 Web application where customers can order different sizes of pizzas with one or more toppings. Customers can choose for it to be delivery or not .
-### By Faith Chemutai ,06/03/2022
+### By Faith Chemutai ,21/03/2022
 ## Setup/instalation Requirements
 *You need to have a vs code/ atom installed
 *Access to Internet

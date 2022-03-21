@@ -7,7 +7,24 @@
     color: white;
     font-style: italic;
     font-family:  sans-serif;
+    font-family: cursive;
 
+}
+.jumbotron h5{
+    text-align: right;
+    margin-top: -15px;
+}  
+.jumbotron img{
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    float:left;
+    margin-top: -15px;
+    
+
+} 
+#title{
+    font-family: cursive;
 }
 body{
     /* background-image: url(https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60); */
@@ -55,3 +72,12 @@ thead{
 #reset{
     margin-top: 10%;
 }
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  } 
