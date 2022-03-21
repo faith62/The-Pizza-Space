@@ -49,3 +49,6 @@ thead{
     background-color: rgb(16, 54, 16);
     color: white;
 }
+#result{
+    font-weight: bolder;
+}
