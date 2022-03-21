@@ -15,7 +15,6 @@ Web application where customers can order different sizes of pizzas with one or 
 
  ### Behaviour Driven Development
  1.Displays select form for user to 
-   
    -INPUT: "User select the size of pizza , the type of tooping and crust"
    -INPUT: "User has an option to add order using the add order button"
    -INPUT: "user can choose delivery or not"
@@ -29,7 +28,7 @@ Web application where customers can order different sizes of pizzas with one or 
  ### Bugs
  <p>Have you seen any bug? Contact me.</p>
 
- ##### Link to LIve Site :[]
+ ##### Link to LIve Site :[https://faith62.github.io/The-Pizza-Space/]
 
  ## Authors Info
 Email: phifeichemu@gmail.com
